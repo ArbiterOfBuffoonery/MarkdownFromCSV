@@ -3,6 +3,7 @@
 	"displayName": "MarkdownFromCSV",
 	"description": "",
 	"version": "0.0.1",
+	"publisher": "jojoco",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -10,14 +11,18 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:jojoco.MarkdownFromCSV"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "jojoco.MarkdownFromCSV",
+				"title": "CSV to Markdown table"
+			},
+			{
+				"command": "jojoco.MarkdownFromTSV",
+				"title": "TSV to Markdown table"
 			}
 		]
 	},

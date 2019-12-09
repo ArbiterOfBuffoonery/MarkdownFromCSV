@@ -1,7 +1,10 @@
 {
 	"name": "markdownfromcsv",
-	"displayName": "MarkdownFromCSV",
-	"description": "",
+	"displayName": "Markdown table from CSV/TSV",
+	"description": "Convert a CSV or TSV file to a Markdown table using the command pallet.",
+	"author": {
+		"name": "Beach Dix"
+	},
 	"version": "0.0.1",
 	"publisher": "jojoco",
 	"engines": {
@@ -10,6 +13,11 @@
 	"categories": [
 		"Other"
 	],
+	"license": "SEE LICENSE IN LICENSE.md",
+	"galleryBanner": {
+		"color": "#0A6B95",
+		"theme": "dark"
+	},
 	"activationEvents": [
 		"onCommand:jojoco.MarkdownFromCSV"
 	],

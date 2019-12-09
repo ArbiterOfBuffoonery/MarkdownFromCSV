@@ -1,4 +1,4 @@
-# Markdown from CSV README
+# Markdown from CSV/TSV README
 
 This extension creates a Markdown table from a sequence of lines in the comma delimited value (CSV) or tab delimited value (TSV) format.
 
@@ -6,21 +6,17 @@ The core functionality of this extension utilizes the [CsvToMarkdownTable projec
 
 ## How to use
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Currently either conversion can be made using either CSV or TSV.
 
-For example if there is an image subfolder under your extension project workspace:
+- To convert from CSV to a Markdown table type `CSV to Markdown table` in the command pallet.
+- To convert from TSV to a Markdown table type `TSV to Markdown table` in the command pallet.
 
-\!\[feature X\]\(images/feature-x.png\)
+![Simple conversion example](images/markdown-table_base-case.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> Tip: If the desired data to convert is part of a document, select the text to be converted then execute the conversion command.
 
+![Selection conversion example](images/markdown-table_selection-case.gif)
 
 ## Extension Settings
 
 Currently there are no configurable settings.
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of the extension.

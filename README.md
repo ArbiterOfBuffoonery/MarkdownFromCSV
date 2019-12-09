@@ -1,4 +1,4 @@
-# markdownfromcsv README
+# Markdown from CSV README
 
 This extension creates a Markdown table from a sequence of lines in the comma delimited value (CSV) or tab delimited value (TSV) format.
 

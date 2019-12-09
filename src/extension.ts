@@ -56,8 +56,8 @@ export function convertToMarkdown(delimiter: string) {
 		e.insert(selection.start, markdownText);
 	});
 	 
-	  console.debug("Selected text is: " + textSelection);
-	  console.debug("Markdown text is: " + markdownText);
+	  console.debug("Selected text is:\n" + textSelection);
+	  console.debug("Markdown text is:\n" + markdownText);
 	}
 }
 
@@ -66,7 +66,7 @@ function getDocumentNewline(eol: vscode.EndOfLine) : string {
 		case vscode.EndOfLine.LF:
 			return "\n";
 		case vscode.EndOfLine.CRLF:
-			return "\r\n"
+			return "\r\n";
 	}
 }
 

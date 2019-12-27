@@ -1,3 +1,6 @@
+[![Build Status](https://dev.azure.com/jojoco/Markdown%20from%20csv/_apis/build/status/paradoXp.MarkdownFromCSV?branchName=master)](https://dev.azure.com/jojoco/Markdown%20from%20csv/_build/latest?definitionId=1&branchName=master)
+
+
 # Markdown from CSV/TSV README
 
 This extension creates a Markdown table from a sequence of lines in the comma delimited value (CSV) or tab delimited value (TSV) format.

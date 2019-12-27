@@ -20,3 +20,7 @@ Currently either conversion can be made using either CSV or TSV.
 ## Extension Settings
 
 Currently there are no configurable settings.
+
+## Adding to vs-code
+
+In the Extensions pane (`ctrl` + `shift` + `X`) search for `markdownfromcsv`

@@ -9,7 +9,7 @@ The core functionality of this extension utilizes the [CsvToMarkdownTable projec
 
 ## How to use
 
-Currently either conversion can be made using either CSV or TSV.
+Currently the conversion can be made using either CSV or TSV.
 
 - To convert from CSV to a Markdown table type `CSV to Markdown table` in the command pallet.
 - To convert from TSV to a Markdown table type `TSV to Markdown table` in the command pallet.

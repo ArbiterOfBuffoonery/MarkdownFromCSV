@@ -5,7 +5,7 @@
 	"author": {
 		"name": "Beach Dix"
 	},
-	"version": "1.0.2",
+	"version": "1.0.0",
 	"publisher": "jojoco",
 	"engines": {
 		"vscode": "^1.40.0"

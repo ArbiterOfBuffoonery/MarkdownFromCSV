@@ -24,12 +24,12 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	disposable = vscode.commands.registerCommand('jojoco.MarkdownFromTSV', () => {
+	let disposable2 = vscode.commands.registerCommand('jojoco.MarkdownFromTSV', () => {
 		// The code you place here will be executed every time your command is executed
 
 		convertToMarkdown("\t");
 	});
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(disposable2);
 }
 
 export function convertToMarkdown(delimiter: string) {

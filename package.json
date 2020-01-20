@@ -28,7 +28,8 @@
 		"theme": "dark"
 	},
 	"activationEvents": [
-		"onCommand:jojoco.MarkdownFromCSV"
+		"onCommand:jojoco.MarkdownFromCSV",
+		"onCommand:jojoco.MarkdownFromTSV"
 	],
 	"main": "./out/extension.js",
 	"contributes": {

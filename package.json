@@ -53,11 +53,11 @@
 		"deploy": "vsce publish --yarn"
 	},
 	"devDependencies": {
-		"@types/mocha": "^2.2.42",
-		"@types/node": "^10.12.21",
-		"tslint": "^5.12.1",
-		"typescript": "^3.3.1",
-		"vsce": "^1.71.0",
-		"vscode": "^1.1.28"
+		"@types/mocha": "^7.1.1",
+		"@types/node": "^13.9.2",
+		"tslint": "^6.1.0",
+		"typescript": "^3.8.3",
+		"vsce": "^1.74.0",
+		"vscode": "^1.1.36"
 	}
 }

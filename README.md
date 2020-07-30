@@ -5,7 +5,7 @@
 
 This extension creates a Markdown table from a sequence of lines in the comma delimited value (CSV) or tab delimited value (TSV) format.
 
-It also can convert a Markdown table to CSV format.
+It can also convert a Markdown table to CSV format.
 
 The core functionality of this extension utilizes the [CsvToMarkdownTable project](https://github.com/donatj/CsvToMarkdownTable). The source code therein was modified to work cleanly with VS Code.
 

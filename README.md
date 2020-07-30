@@ -20,6 +20,10 @@ Currently the conversion can be made using either CSV or TSV.
 
 ![Selection conversion example](images/markdown-table_selection-case.gif)
 
+## Convert to CSV from Markdown
+
+To convert Markdown to CSV, type `Markdown table to CSV` in the command pallet.
+
 ## Extension Settings
 
 Currently there are no configurable settings.

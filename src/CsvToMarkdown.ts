@@ -18,6 +18,7 @@
  *
  * @param {string} csvContent - The string content of the CSV
  * @param {string} delimiter - The character(s) to use as the CSV column delimiter
+ * @param {string} newline - The character(s) to use as a newline.
  * @param {boolean} hasHeader - Whether to use the first row of Data as headers
  * @returns {string}
  */
@@ -82,9 +83,9 @@ export function csvToMarkdown(csvContent: string, delimiter: string = "\t", newl
 	let rowOutput = "";
 	tabularData.forEach((col, i) => {
 		maxColumnLen.forEach((len, y) => {
-			const row = typeof col[y] === "undefined" ? "" : col[y];
-			const spacing = Array((len - row.length) + 1).join(" ");
-			const out = `| ${row}${spacing} `;
+			const colVal = typeof col[y] === "undefined" ? "" : col[y];
+			const spacing = Array((len - colVal.length) + 1).join(" ");
+			const out = `| ${colVal}${spacing} `;
 			if (hasHeader && i === 0) {
 				headerOutput += out;
 			} else {

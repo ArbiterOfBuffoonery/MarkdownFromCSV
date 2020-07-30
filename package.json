@@ -5,7 +5,7 @@
 	"author": {
 		"name": "Beach Dix"
 	},
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "jojoco",
 	"engines": {
 		"vscode": "^1.40.0"
@@ -14,13 +14,13 @@
 		"Other"
 	],
 	"license": "SEE LICENSE IN LICENSE.md",
-	"homepage": "https://github.com/paradoXp/MarkdownFromCSV/blob/master/README.md",
+	"homepage": "https://github.com/ArbiterOfBuffoonery/MarkdownFromCSV/blob/master/README.md",
 	"bugs": {
-		"url": "https://github.com/paradoXp/MarkdownFromCSV/issues"
+		"url": "https://github.com/ArbiterOfBuffoonery/MarkdownFromCSV/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/paradoXp/MarkdownFromCSV"
+		"url": "https://github.com/ArbiterOfBuffoonery/MarkdownFromCSV"
 	},
 	"icon": "images/markdownTableIcon.png",
 	"galleryBanner": {
@@ -29,7 +29,8 @@
 	},
 	"activationEvents": [
 		"onCommand:jojoco.MarkdownFromCSV",
-		"onCommand:jojoco.MarkdownFromTSV"
+		"onCommand:jojoco.MarkdownFromTSV",
+		"onCommand:jojoco.CSVFromMarkdown"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -41,6 +42,10 @@
 			{
 				"command": "jojoco.MarkdownFromTSV",
 				"title": "TSV to Markdown table"
+			},
+			{
+				"command": "jojoco.CSVFromMarkdown",
+				"title": "Markdown table to CSV"
 			}
 		]
 	},

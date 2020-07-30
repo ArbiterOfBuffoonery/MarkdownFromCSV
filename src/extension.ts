@@ -2,6 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import {csvToMarkdown} from './CsvToMarkdown';
+import { markdownToCSV } from './MarkdownToCsv';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -30,6 +31,14 @@ export function activate(context: vscode.ExtensionContext) {
 		convertToMarkdown("\t");
 	});
 	context.subscriptions.push(disposable2);
+
+	// The command has been defined in the package.json file
+	// Now provide the implementation of the command with registerCommand
+	// The commandId parameter must match the command field in package.json
+	let disposable3 = vscode.commands.registerTextEditorCommand('jojoco.CSVFromMarkdown', () => {
+		convertToCSV();
+	});
+	context.subscriptions.push(disposable3);
 }
 
 export function convertToMarkdown(delimiter: string) {
@@ -58,6 +67,35 @@ export function convertToMarkdown(delimiter: string) {
 	 
 	  console.debug("Selected text is:\n" + textSelection);
 	  console.debug("Markdown text is:\n" + markdownText);
+	}
+}
+
+export function convertToCSV() {
+	const editor = vscode.window.activeTextEditor;
+
+	if (editor) {
+		const document = editor.document;
+		let selection = editor.selection;
+		
+		if(selection.isEmpty) {
+			var firstLine = document.lineAt(0);
+			var lastLine = document.lineAt(document.lineCount - 1);
+			var textRange = new vscode.Range(0, firstLine.range.start.character, document.lineCount - 1, lastLine.range.end.character);
+
+			selection = new vscode.Selection(textRange.start, textRange.end);
+		}
+	
+	const textSelection = document.getText(selection);
+
+	const csvText = markdownToCSV(textSelection, getDocumentNewline(document.eol));
+	
+	editor.edit(e => {
+		e.delete(selection);
+		e.insert(selection.start, csvText);
+	});
+	 
+	  console.debug("Selected text is:\n" + textSelection);
+	  console.debug("CSV text is:\n" + csvText);
 	}
 }
 

@@ -2,6 +2,9 @@
 
 All notable changes to the "markdownfromcsv" extension will be documented in this file.
 
+## 1.1.1
+- Update dependency version that contains fixes to minor security vulnerabilities.
+
 ## 1.1.0
 - Add the ability to convert a markdown table to CSV.
 

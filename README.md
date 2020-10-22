@@ -33,3 +33,7 @@ Currently there are no configurable settings.
 ## Adding to vs-code
 
 In the Extensions pane (`ctrl` + `shift` + `X`) search for `markdownfromcsv`
+
+## If you like this extension, please consider a donation
+
+[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/ArbiterOfBuffoonery)

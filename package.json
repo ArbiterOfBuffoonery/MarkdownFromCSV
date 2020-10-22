@@ -53,7 +53,7 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"test": "node ./out/test/runTest.js",
+		"test": "node ./out/test/runTests.js",
 		"lint": "eslint -c .eslintrc.js --ext .ts ./src",
 		"deploy": "vsce publish --yarn"
 	},

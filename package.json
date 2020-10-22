@@ -53,7 +53,7 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"test": "node ./out/test/runTests.js",
+		"test": "node node_modules/mocha/bin/mocha --recursive",
 		"lint": "eslint -c .eslintrc.js --ext .ts ./src",
 		"deploy": "vsce publish --yarn"
 	},

@@ -50,6 +50,7 @@
 		]
 	},
 	"scripts": {
+		"lint": "eslint -c .eslintrc.js --ext .ts ./src",
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
@@ -60,9 +61,12 @@
 	"devDependencies": {
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.11.0",
-		"tslint": "^6.1.1",
+		"@types/vscode":"^1.50.0",
+		"@typescript-eslint/eslint-plugin": "^4.5.0",
+		"@typescript-eslint/parser": "^4.5.0",
+		"eslint": "^7.11.0",
 		"typescript": "^3.8.3",
 		"vsce": "^1.75.0",
-		"vscode": "^1.1.36"
+		"vscode-test": "1.4.0"
 	}
 }

@@ -14,7 +14,7 @@
 
 // The module 'assert' provides assertion methods from node
 import * as assert from 'assert';
-import {csvToMarkdown} from '../CsvToMarkdown';
+import {csvToMarkdown} from '../../CsvToMarkdown';
 
 suite('csvToMarkdown tests', function () {
 

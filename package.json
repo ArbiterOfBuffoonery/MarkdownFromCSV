@@ -2,7 +2,7 @@
 	"name": "markdownfromcsv",
 	"displayName": "Markdown table from CSV/TSV",
 	"description": "Convert a CSV or TSV file to a Markdown table using the command pallet.",
-	"version": "1.1.6",
+	"version": "1.1.8",
 	"author": {
 		"name": "Beach Dix"
 	},

@@ -70,6 +70,6 @@
 		"vscode-test": "1.4.0"
 	},
 	"dependencies": {
-		"mocha": "^14.0.0"
+		"mocha": "^9.2.2"
 	}
 }

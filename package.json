@@ -5,7 +5,7 @@
 	"author": {
 		"name": "Beach Dix"
 	},
-	"version": "1.1.2",
+	"version": "1.1.6",
 	"publisher": "jojoco",
 	"engines": {
 		"vscode": "^1.50.1"
@@ -66,10 +66,10 @@
 		"@typescript-eslint/parser": "^4.5.0",
 		"eslint": "^7.11.0",
 		"typescript": "^4.0.3",
-		"vsce": "^1.81.1",
+		"vsce": "^2.10.0",
 		"vscode-test": "1.4.0"
 	},
 	"dependencies": {
-		"mocha": "^8.2.0"
+		"mocha": "^10.0.0"
 	}
 }
